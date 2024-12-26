@@ -4,7 +4,7 @@
     "fsrMinCompatibility": "7.6.0",
     "type": "solutionpack",
     "local": true,
-    "certified": true
+    "certified": true,
     "featuredTags": [
         {
             "color": "#2d87e3",
