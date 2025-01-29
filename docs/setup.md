@@ -14,12 +14,14 @@
 For optimal performance of the **FortiSOAR Health Assessment** solution pack, you must configure:
 
 - FortiSOAR Health Assessment Connector
-    - This connector is used to get required data from FortiSOAR system to anazlise and suggest configuration changes. The connector uses following Authentication Method
-        - Password Based : This method uses basic credential for authentication. Super User Password field is manditory and Fill the field with csadmin cli user's password.
-        - Certificate Based : This method uses certifcate for autentication . Fields involved :
+    - This connector is used to get required data from FortiSOAR&trade; system like playbook statistics, system resources, current configuration settings, etc to anazlise and suggest configuration changes. The connector uses following Authentication Method
+        - Password Based : This method uses basic credential for authentication. Super User Password field is manditory and Fill the field with csadmin cli user's password. Check FortiSOAR&trade; [documentation](https://docs.fortinet.com/document/fortisoar/7.6.1/deployment-guide/158469/deploying-fortisoar#Credentials) for more details
+        - Certificate Based : This method uses certifcate for autentication. Fields involved :
             - SSH Key Password : Enter the password for the SSH private key, if the key is encrypted.
             - Private Key : Provide the private key for SSH authentication.
 
+> [!NOTE] 
+> All the data this is captured and evaluated by this solution pack is stored on user's system and no data is the company.
 
 
 | [Usage](./usage.md) | [Contents](./contents.md) |
