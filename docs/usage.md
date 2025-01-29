@@ -51,21 +51,32 @@ How to read Configuration Recommendation Record
         - *SWAP SPACE* : Ensure adequate swap space to maintain stability under heavy load.
 
 # Applying Recommended Configurations
+
+> ![IMPORTANT]
+> It is advised to take downtime before applying the changes below.
+
 You can apply recommended configuration using any of the following methods after connecting to your FortiSOAR™ instance via SSH:
 * Using shell commmands
 * Manually editing configuration files
 
 Once done, create a swap space. For more information, refer to the Creating a Swap File section in the Red Hat Enterprise documentaiton.
 
-> [!Important]
-> Before editing any file, make sure you have backed up those files.
+> [!CAUTION]
+> The system may become unstable if configuration files are not edited properly. Make sure to double-check the changes before applying them.
+
 
 ### Applying Recommeded Configurations Using Shell Commands
+
+> [!TIP]
+> We recommend to use this method for apply latest configuration recommeded
 
 Run the following command to apply latest configuration recommeded in Health Assessment record
 - `sudo csadm system config --mode optimal`
 
 ### Applying Recommeded Configurations by Manually Editing Config Files
+
+> [!Important]
+> Before editing any file, make sure you have backed up those files.
 
 The section **Recommended System Configuration Based on Assessment** contains paramters to edit for recommended configuration changes. Configuration files' location of each service is as follows and after making the necessary changes, restart the respective service to apply the updates:
 - celeryd
@@ -84,9 +95,8 @@ The section **Recommended System Configuration Based on Assessment** contains pa
 
 
 > [!NOTE]
-> For HA setups apply the recommended configuration to all the systems. Restart the services on primary node first then secondary nodes.
->
-> If you have updated some parameters in the `/var/lib/pgsql/16/data/postgresql.conf` file and the same parameter is present in the `/var/lib/pgsql/16/data/postgresql.auto.conf` file, the parameter in `/var/lib/pgsql/16/data/postgresql.conf` will be overridden by the one in `/var/lib/pgsql/16/data/postgresql.auto.conf`. Therefore, we recommend using the first method to edit system resources.
+> - For HA setups apply the recommended configuration to all the systems. Restart the services on primary node first then secondary nodes.
+> - If you have updated some parameters in the `/var/lib/pgsql/16/data/postgresql.conf` file and the same parameter is present in the `/var/lib/pgsql/16/data/postgresql.auto.conf` file, the parameter in `/var/lib/pgsql/16/data/postgresql.conf` will be overridden by the one in `/var/lib/pgsql/16/data/postgresql.auto.conf`. Therefore, we recommend using the first method to edit system resources.
 
 
 # Known Issues
