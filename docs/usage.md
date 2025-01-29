@@ -11,7 +11,7 @@ FortiSOAR Health Assessment can be used in following ways:
 - **Usage 2**: Configuration Recommendation
     - Navigate to Health Assessment
     - Click on **Recommend System Configuration**. A Configuration Recommendation Record will be generated. [Click here](#configuration-recommendation) for more details
-- Once record is generated you can apply recommendation generated. [Click Here](#step-to-apply-generated-configuration-recommendations) for step to apply
+- Once record is generated you can apply recommendation generated. [Click Here](#applying-recommended-configurations) for step to apply
 
 # Health Assessment
 How to read Health Assessment Record
@@ -53,17 +53,13 @@ How to read Configuration Recommendation Record
 # Applying Recommended Configurations
 
 > [!IMPORTANT]
-> It is advised to take downtime before applying the changes below.
+>  - It is advised to take **downtime** and  a **VM snapshot** before applying the recommended configuration changes.
 
 You can apply recommended configuration using any of the following methods after connecting to your FortiSOAR™ instance via SSH:
 * Using shell commmands
 * Manually editing configuration files
 
 Once done, create a swap space. For more information, refer to the Creating a Swap File section in the Red Hat Enterprise documentaiton.
-
-> [!CAUTION]
-> The system may become unstable if configuration files are not edited properly. Make sure to double-check the changes before applying them.
-
 
 ### Applying Recommeded Configurations Using Shell Commands
 
@@ -75,8 +71,9 @@ Run the following command to apply latest configuration recommeded in Health Ass
 
 ### Applying Recommeded Configurations by Manually Editing Config Files
 
-> [!Important]
-> Before editing any file, make sure you have backed up those files.
+> [!CAUTION]
+> - The system may become unstable if configuration files are not edited properly. Make sure to double-check the changes before applying them.
+> - Before editing any file, make sure you have backed up those files.
 
 The section **Recommended System Configuration Based on Assessment** contains paramters to edit for recommended configuration changes. Configuration files' location of each service is as follows and after making the necessary changes, restart the respective service to apply the updates:
 - celeryd

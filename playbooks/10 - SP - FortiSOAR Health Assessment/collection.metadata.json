@@ -2,7 +2,7 @@
     "@context": "\/api\/3\/contexts\/WorkflowCollection",
     "@type": "WorkflowCollection",
     "name": "10 - SP - FortiSOAR Health Assessment",
-    "description": "Playbooks designed to capture, evaluate, and generate reports and yaml files based to collected data.",
+    "description": "Playbooks designed to capture, evaluate, generate reports and yaml files based on collected data.",
     "visible": true,
     "image": null,
     "uuid": "dbf8de0d-974b-451d-bbbc-8d4e2ec77ec4",
