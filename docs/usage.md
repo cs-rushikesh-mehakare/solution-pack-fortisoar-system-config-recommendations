@@ -52,7 +52,7 @@ How to read Configuration Recommendation Record
 
 # Applying Recommended Configurations
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > It is advised to take downtime before applying the changes below.
 
 You can apply recommended configuration using any of the following methods after connecting to your FortiSOAR™ instance via SSH:
