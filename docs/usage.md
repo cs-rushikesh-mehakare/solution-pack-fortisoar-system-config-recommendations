@@ -53,7 +53,7 @@ How to read Configuration Recommendation Record
 # Applying Recommended Configurations
 
 > [!IMPORTANT]
->  - It is advised to take **downtime** and  a **VM snapshot** before applying the recommended configuration changes.
+>  - It is advised to plan **downtime** and  a **VM snapshot** before applying the recommended configuration changes.
 
 You can apply recommended configuration using any of the following methods after connecting to your FortiSOAR™ instance via SSH:
 * Using shell commmands
@@ -64,7 +64,7 @@ Once done, create a swap space. For more information, refer to the [Creating a S
 ### Applying Recommended Configurations Using Shell Commands
 
 > [!TIP]
-> We recommend to use this method for applying latest configuration recommended
+> We recommend to use this method for applying recommended configuration 
 
 Run the following command to apply latest configuration recommended in Health Assessment record
 - `sudo csadm system config --mode optimal`

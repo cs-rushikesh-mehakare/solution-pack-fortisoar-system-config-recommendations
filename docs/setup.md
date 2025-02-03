@@ -24,7 +24,7 @@ For optimal performance of the **FortiSOAR Health Assessment** solution pack, yo
     
 
 > [!NOTE] 
-> All the data this is captured and evaluated by this solution pack is stored on user's system and no data is the company.
+> All data captured and processed by this solution pack is stored solely on the user's system. No data is transmitted to or stored by the company.
 
 
 | [Usage](./usage.md) | [Contents](./contents.md) |
