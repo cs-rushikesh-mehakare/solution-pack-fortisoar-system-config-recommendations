@@ -4,7 +4,7 @@
     "name": "Health Assessment",
     "aliasName": null,
     "tag": null,
-    "description": "This playbook that creates Health Assessment Record",
+    "description": "This playbook creates Health Assessment Record",
     "isActive": true,
     "debug": false,
     "singleRecordExecution": false,

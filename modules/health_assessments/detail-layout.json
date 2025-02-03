@@ -83,7 +83,8 @@
                                             },
                                             "icon": "fa fa-medkit",
                                             "show": true,
-                                            "visible": true
+                                            "visible": true,
+                                            "conditionalVisibility": false
                                         },
                                         {
                                             "title": "Recommendations",
@@ -132,7 +133,7 @@
                                                 "visible": true
                                             },
                                             "icon": "fa fa-wrench",
-                                            "show": false,
+                                            "show": true,
                                             "visible": true
                                         }
                                     ],
