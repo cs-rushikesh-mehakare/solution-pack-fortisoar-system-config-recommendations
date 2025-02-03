@@ -64,7 +64,7 @@ Once done, create a swap space. For more information, refer to the [Creating a S
 ### Applying Recommended Configurations Using Shell Commands
 
 > [!TIP]
-> We recommend to use this method for apply latest configuration recommended
+> We recommend to use this method for applying latest configuration recommended
 
 Run the following command to apply latest configuration recommended in Health Assessment record
 - `sudo csadm system config --mode optimal`
@@ -92,7 +92,7 @@ The section **Recommended System Configuration Based on Assessment** in report o
 
 
 > [!NOTE]
-> - For HA setups apply the recommended configuration to all the systems. Restart the services on primary node first then secondary nodes.
+> - For HA setups apply the recommended configuration to all the systems. Restart the services on primary node first then on secondary nodes.
 > - If you have updated some parameters in the `/var/lib/pgsql/16/data/postgresql.conf` file and the same parameter is present in the `/var/lib/pgsql/16/data/postgresql.auto.conf` file, the parameter in `/var/lib/pgsql/16/data/postgresql.conf` will be overridden by the one in `/var/lib/pgsql/16/data/postgresql.auto.conf`. Therefore, we recommend using the first method to edit system resources.
 
 
