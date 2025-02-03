@@ -59,23 +59,23 @@ You can apply recommended configuration using any of the following methods after
 * Using shell commmands
 * Manually editing configuration files
 
-Once done, create a swap space. For more information, refer to the Creating a Swap File section in the Red Hat Enterprise documentaiton.
+Once done, create a swap space. For more information, refer to the [Creating a Swap File](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/getting-started-with-swap_managing-storage-devices#creating-a-swap-file_getting-started-with-swap) section in the Red Hat Enterprise documentation.
 
-### Applying Recommeded Configurations Using Shell Commands
+### Applying Recommended Configurations Using Shell Commands
 
 > [!TIP]
-> We recommend to use this method for apply latest configuration recommeded
+> We recommend to use this method for apply latest configuration recommended
 
-Run the following command to apply latest configuration recommeded in Health Assessment record
+Run the following command to apply latest configuration recommended in Health Assessment record
 - `sudo csadm system config --mode optimal`
 
-### Applying Recommeded Configurations by Manually Editing Config Files
+### Applying Recommended Configurations by Manually Editing Config Files
 
 > [!CAUTION]
 > - The system may become unstable if configuration files are not edited properly. Make sure to double-check the changes before applying them.
 > - Before editing any file, make sure you have backed up those files.
 
-The section **Recommended System Configuration Based on Assessment** contains paramters to edit for recommended configuration changes. Configuration files' location of each service is as follows and after making the necessary changes, restart the respective service to apply the updates:
+The section **Recommended System Configuration Based on Assessment** in report or **Recommendation Tab** in record details view, contains parameters to edit for recommended configuration changes. Configuration file's location of each service is as follows and after making the necessary changes, restart the respective service to apply the updates:
 - celeryd
     * File Location :`/etc/celery/celeryd.conf`
 - sealab_wsgi
@@ -83,7 +83,7 @@ The section **Recommended System Configuration Based on Assessment** contains pa
 - integrations_wsgi
     * File Location : `/etc/uwsgi.d/integrations_wsgi.ini`
 - PHP-FPM
-    *  File Location : `/etc/php-fpm.d/cyops-api.conf`
+    * File Location : `/etc/php-fpm.d/cyops-api.conf`
 - RabbitMQ
     * File Location : `/etc/rabbitmq/rabbitmq-env.conf`
 - PostgreSQL
