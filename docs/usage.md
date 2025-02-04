@@ -53,7 +53,7 @@ How to read Configuration Recommendation Record
 # Applying Recommended Configurations
 
 > [!IMPORTANT]
->  - It is advised to plan **downtime** and  a **VM snapshot** before applying the recommended configuration changes.
+> It is advised to plan **downtime** and  a **VM snapshot** before applying the recommended configuration changes.
 
 You can apply recommended configuration using any of the following methods after connecting to your FortiSOAR™ instance via SSH:
 * Using shell commmands
